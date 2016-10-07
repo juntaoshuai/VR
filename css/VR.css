@@ -13,6 +13,8 @@ select,input,img,select{vertical-align:middle;outline:none;}
 .clear{clear:both; font-size:0; height:0;visibility:hidden;overflow:hidden;*zoom:1;}
 a{color:#243851;outline:none;text-decoration: none;}
 a:hover{ color:#F15C00; text-decoration:underline;}
+.c1a4991{color:#1a4991;}
+
 h1,h2,h3{ font-size:14px;}
 h4{ font-size:12px;}
 h6{ text-align:center;}
@@ -359,15 +361,16 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 {
 	/*height: 33px;
 	line-height: 33px;*/
-	/*position: relative;*/
+	position: relative;
 	border-bottom: 1px solid #c4c4c4;
 	_z-index:1;
 	font-size: 12px;
 }
+
 .tab_title h3
 {
 	float: left;
-	padding: 0 25px;
+	padding: 0 10px;
 	font: 16px/19px "Microsoft Yahei","黑体";
 	color: #313131;
 	text-align: center;
@@ -377,6 +380,19 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	padding-bottom: 5px;
 	margin-right: 15px;
 	position: relative;
+}
+.tab_title h2{
+	float: left;
+	font:bold 18px/19px "Microsoft Yahei","黑体";
+	color: #ff7200;
+	text-align: center;
+	cursor: pointer;
+	*zoom:1;
+	margin: 0 0 0 -1px;
+	padding-bottom: 5px;
+	margin-right: 15px;
+	position: relative;
+
 }
 .tab_title h3 i{
 	position: absolute;
@@ -403,6 +419,8 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
   right: 10px;
   top: 0;
 }
+.tab_title .more a{color:#1a4991;}
+.tab_title .more a:hover{color:#F15C00;}
 .tab_title_ts .more 
 {
 	display: none;
@@ -415,12 +433,9 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 }
 .tab_title_ts .more a:link,.tab_title_ts .more a:visited
 {
-	color: #888;
+	color: #1a4991;
 }
-.tab_title_ts .more a:hover
-{
-	color: #f30;
-}
+
 .tab_title2
 {
 	position: relative;
