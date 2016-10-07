@@ -7,7 +7,6 @@ body{color:#333;font-family:simsun,Arial; width:100%; margin:0 auto;font-size:12
 table {border-collapse:collapse;border-spacing:0;}
 img {border:0;}
 div:after, ul:after, li:after, dl:after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;}
-p{ line-height:22px; color:#333;  font-weight:400;}
 ul,ol{list-style-type:none;}
 select,input,img,select{vertical-align:middle;outline:none;}
 .clear{clear:both; font-size:0; height:0;visibility:hidden;overflow:hidden;*zoom:1;}
@@ -1062,3 +1061,12 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .v-act-list dd{font-size: 12px;color:#000;line-height: 16px;margin-left: 65px;position: relative;}
 .v-act-list dd p{line-height: 16px;}
 .v-act-list dd .do{position: absolute;right:0;bottom:0;color:#ff7200;}
+
+/*评测中心*/
+.pc-list{margin-right: -17px;}
+.pc-list li{float: left;position: relative;width: 212px;margin-right: 17px;}
+.pc-list .tag{background: #ff7200;position: absolute;width: 39px;
+height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font-weight: bold;text-align:center;padding:26px 7px 0 9px;}
+.pc-list .con{margin-left: 63px;margin-top: 4px;}
+.pc-list .con h3{font-size: 14px;line-height: 24px; font-weight: bold; color: #000;}
+.pc-list .con p{font-size:12px;color:#666;line-height: 18px;}
