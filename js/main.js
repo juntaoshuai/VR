@@ -106,10 +106,16 @@ $(function(){
 /*VR*/
 jQuery(function($){
   //公共tab
-  $(".tab_title h3").mouseover(function(){
-    var index=$(this).index();
-    $(this).addClass("selected").siblings().removeClass("selected");
-    $(this).parent().siblings(".tabs-con").hide().eq(index).show();
+  $(".tab_title_box h3").mouseover(function(){
+    var index=$(this).index(),
+        $this=$(this),
+        $more=$this.closest(".tab_title").find(".more a"),
+        $a=$this.find("a");
+        $this.addClass("selected").siblings().removeClass("selected");
+    $this.closest(".tab_title").siblings(".tabs-con").hide().eq(index).show();
+    if($this.closest(".tab_title").has(".more")){
+       $more.attr("href",$a.attr("href"));
+    }
 
   });
 

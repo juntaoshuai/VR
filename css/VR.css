@@ -41,6 +41,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .pt20{padding-top:20px;}
 .pl10{padding-left:10px;}
 .pr10{padding-right: 10px;}
+.mt9{margin-top: 9px;}
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
 .mt23{margin-top: 23px;}   
@@ -380,7 +381,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	margin-right: 15px;
 	position: relative;
 }
-.tab_title h2{
+.tab_title .tab_title_hd{
 	float: left;
 	font:bold 18px/19px "Microsoft Yahei","黑体";
 	color: #ff7200;
@@ -673,10 +674,19 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 {
 	color: #243851;
 }
-.news_list li a:hover,.h_title a:hover
+.news_list_c0 li a:link,.news_list_c0 li a:visited{
+	color: #000;
+}
+
+.news_list li a:hover,.news_list_c0 li a:hover,.h_title a:hover
 {
 	color: #f30;
 }
+
+
+
+
+
 .news_list_sj li
 {
 	background: url(../images/ico_sj.gif) no-repeat center left;
@@ -1063,10 +1073,10 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .v-act-list dd .do{position: absolute;right:0;bottom:0;color:#ff7200;}
 
 /*评测中心*/
-.pc-list{margin-right: -17px;}
+.pc-list{margin-right: -17px;border-bottom:1px dashed #d8d8d8;padding-bottom: 19px;}
 .pc-list li{float: left;position: relative;width: 212px;margin-right: 17px;}
 .pc-list .tag{background: #ff7200;position: absolute;width: 39px;
 height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font-weight: bold;text-align:center;padding:26px 7px 0 9px;}
 .pc-list .con{margin-left: 63px;margin-top: 4px;}
 .pc-list .con h3{font-size: 14px;line-height: 24px; font-weight: bold; color: #000;}
-.pc-list .con p{font-size:12px;color:#666;line-height: 18px;}
+.pc-list .con p{font-size:12px;color:#666;line-height: 18px;height: 36px;overflow: hidden;}
