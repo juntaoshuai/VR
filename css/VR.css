@@ -45,12 +45,15 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
 .mt23{margin-top: 23px;}   
+.mt40{margin-top:40px;}   
 .mr20{margin-right: 20px;} 
+.ml11{margin-left: 11px;}
 .f14{font-size:14px;}
 #noborder{border:none;}
 .gray_bg{background: #f2f2f2;}
 
 /*公共宽度*/
+.w320{width:320px;}
 .w325{width:325px;}
 
 
@@ -75,10 +78,11 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 {
 	width:100%;
 }
-.w990
+.w990,.main
 {
 	width:990px;
-	margin:0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .head
 {
@@ -413,11 +417,16 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	border-bottom: 2px solid #ff7200;
 	margin-top: -1px;
 }
+
+.tab_title_nobg .selected{
+	background: none;
+}
+
 .tab_title .more ,.tab_title2 .more,.w_title .more
 {
   position: absolute;
   right: 10px;
-  top: 0;
+  top: 2px;
 }
 .tab_title .more a{color:#1a4991;}
 .tab_title .more a:hover{color:#F15C00;}
@@ -1080,3 +1089,90 @@ height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font
 .pc-list .con{margin-left: 63px;margin-top: 4px;}
 .pc-list .con h3{font-size: 14px;line-height: 24px; font-weight: bold; color: #000;}
 .pc-list .con p{font-size:12px;color:#666;line-height: 18px;height: 36px;overflow: hidden;}
+
+.video_pic{
+	margin-left:11px;
+	overflow:hidden;
+	padding: 17px 0 18px;
+}
+.video_pic ul{
+	overflow:hidden;
+	*zoom:1;
+	margin-right:-25px;
+	}
+.video_pic ul li{
+	width:131px;
+	margin-right:12px;
+	float:left;
+	display:inline;
+	
+}
+.video_pic ul li img{
+	width:131px;
+	height:98px;
+	border:1px solid #c4c4c4;
+}
+
+.video_pic ul li span{
+	display:block;
+	line-height:17px;
+	height:34px;
+	overflow:hidden;
+	padding:8px 0 0 4px;
+}
+
+/*互动社区*/
+.active-community{
+	background: #f8f8f8;
+	padding: 19px 11px 0;
+}
+.active-community .post{
+	width:60px;
+	height: 25px;
+	background: #c00;
+	line-height: 25px;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	right:0;
+	bottom: 5px;
+}
+.community-list li {
+	margin-bottom: 12px;
+}
+
+.community-list li img{
+	width:60px;
+	height: 60px;
+	float: left;
+}
+.community-list .profile{
+   margin-left: 70px;
+}
+.community-list .profile h3{
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	margin-bottom: 3px;
+}
+.community-list .profile p{
+	color: #7c7c7c;
+	line-height: 18px;
+}
+.community-list .profile p a{
+	color:#c00;
+}
+
+/*tuwen*/
+.tuwen dt img{
+	width:320px;
+	height: 143px;
+}
+.tuwen dd.tuwen-bg{
+	background: #f2f2f2;
+}
+.tuwen dd h3{
+	font:18px/32px microsoft Yahei;
+}
+.tuwen dd h3 a{color:#000;}
