@@ -43,8 +43,11 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .pr10{padding-right: 10px;}
 .mt9{margin-top: 9px;}
 .mt10{margin-top: 10px;}
+.mt12{margin-top: 12px;}
+.mt17{margin-top: 17px;}
 .mt20{margin-top: 20px;}
 .mt23{margin-top: 23px;}   
+.mt25{margin-top: 25px;}   
 .mt40{margin-top:40px;}   
 .mr20{margin-right: 20px;} 
 .ml11{margin-left: 11px;}
@@ -1165,14 +1168,146 @@ height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font
 }
 
 /*tuwen*/
+
 .tuwen dt img{
 	width:320px;
 	height: 143px;
+}
+.tuwen dd{
+	padding: 0 15px 10px 10px;
 }
 .tuwen dd.tuwen-bg{
 	background: #f2f2f2;
 }
 .tuwen dd h3{
 	font:18px/32px microsoft Yahei;
+	margin-top: 3px;
 }
 .tuwen dd h3 a{color:#000;}
+.tuwen dd h3 a:hover{color:#f15c00;}
+.tuwen dd p{color: #303030;line-height: 18px;height: 36px;overflow: hidden;}
+
+
+.new-selection .title{
+	line-height: 22px;
+	padding-bottom: 8px;
+}
+.new-selection .title h2{
+	width:67px;
+	height: 26px;
+	float: left;
+	background: url(../images/newpro_title.png) 0 0 no-repeat;
+	font:14px/22px microsoft Yahei;
+	color:#fff;
+	text-align: center;
+}
+
+
+.img-list140{
+	border-bottom: 1px dashed #d8d8d8;
+}
+.img-list140 li{
+	width:140px;
+	float: left;
+	margin:0 10px;
+}
+.img-list140 li img{
+	width:140px;
+	height: 80px;
+}
+.img-list140 li p{
+	line-height: 34px;
+	padding-bottom: 6px;
+	text-align: center;
+}
+
+/*核心零部件*/
+.yyzx{
+	width:100%;
+	margin-top:10px;
+	}
+	
+.yyzx_tl{
+	font:16px/32px "微软雅黑","黑体";
+	color:#222;
+	height:32px;
+	border:1px solid #d3d3d3;
+	border-top:2px solid #019bb5;
+	padding-left:8px;
+	background:#fafafa;
+	}
+.pub_tl h2,.yyzx_tl h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.yyzx_con{
+	overflow:hidden;
+	*zoom:1;
+	}
+.cpgq_con{
+	overflow:hidden;
+	*zoom:1;
+	margin:0!important;
+	border:none!important;
+	}
+.yyzx_con .yy_qh{
+	width:82px;
+	float:left;
+	}
+.yyzx_con .yy_qh ul li{
+	width:118px;
+	height:35px;
+	border:1px solid #dadada;
+	background:url(../images/tabtitle_bg.png) 0 0 repeat-x; 
+	border-top:none;
+	text-align:center;
+	font:14px/39px "宋体";
+	color:#000;
+	cursor:pointer;
+}
+.yyzx_con .yy_qh ul li a{
+	color: #000;
+}
+.yyzx_con .yy_qh ul li a:hover,.yyzx_con .yy_qh ul li.selected a{
+	font-weight: bold;
+	color:#fff;
+}
+.yyzx_con .yy_qh ul li.selected{
+	color:#019bb5;
+	font:bold 14px/39px "宋体";
+	border-right:none;
+	background-color: #ff7200;
+	background-image: none;
+	}
+.yyzx_con .yyzx_right{
+	float:right;
+	width:558px;
+	height:400px;
+	overflow:hidden;
+	*zoom:1;
+	}
+.yyzx_con .yyzx_right .yy_r_l{
+	width:285px;
+	float:left;
+	overflow:hidden;
+	}
+.yyzx_con .yyzx_right .yy_r_r{
+	width:260px;
+	float:right;
+	overflow:hidden;
+	}
+
+.gcal{
+	margin-top:10px;
+	}
+.al_tl{
+	height:25px;
+	padding-left:11px;
+	font:bold 14px/25px "宋体";
+	color:#019bb5;
+	background:url(../images/bg01.gif) no-repeat;
+	}
+.more_link{
+	text-align:right;
+	float:right;
+}
