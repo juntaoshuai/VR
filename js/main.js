@@ -106,13 +106,32 @@ $(function(){
 /*VR*/
 jQuery(function($){
   //公共tab
+    $.tabs = function(tabtit,tab_conbox,shijian) {
+      var shijian=shijian || "mouseover"
+    $(tabtit).children().bind(shijian,function(){
+      var index=$(this).index();
+      $(this).addClass("selected").siblings().removeClass("selected"); 
+      $(tab_conbox).children().hide().eq(index).show();
+    });
+  };
+
+  $.tabs("#tabs4","#tabs-conbox4");
+  $.tabs("#tabs5","#tabs-conbox5");
+  $.tabs("#tabs6","#tabs-conbox6");
+  $.tabs("#tabs7","#tabs-conbox7");
+  $.tabs("#tabs8","#tabs-conbox8","click");
+  $.tabs("#tabs9","#tabs-conbox9","click");
+  $.tabs("#tabs10","#tabs-conbox10","click");
+  $.tabs("#tabs11","#tabs-conbox11","click");
+  $.tabs("#tabs12","#tabs-conbox12","click");
+  $.tabs("#tabs13","#tabs-conbox13","click");
+  $.tabs("#tabs14","#tabs-conbox14","click");
+
+  //tab里更多链接
   $(".tab_title_box h3").mouseover(function(){
-    var index=$(this).index(),
-        $this=$(this),
+       var $this=$(this),
         $more=$this.closest(".tab_title").find(".more a"),
         $a=$this.find("a");
-        $this.addClass("selected").siblings().removeClass("selected");
-    $this.closest(".tab_title").siblings(".tabs-con").hide().eq(index).show();
     if($this.closest(".tab_title").has(".more")){
        $more.attr("href",$a.attr("href"));
     }

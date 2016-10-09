@@ -41,15 +41,22 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .pt20{padding-top:20px;}
 .pl10{padding-left:10px;}
 .pr10{padding-right: 10px;}
+.mt3{margin-top: 3px;}
+.mt6{margin-top: 6px;}
 .mt9{margin-top: 9px;}
 .mt10{margin-top: 10px;}
 .mt12{margin-top: 12px;}
 .mt17{margin-top: 17px;}
 .mt20{margin-top: 20px;}
 .mt23{margin-top: 23px;}   
+.mt24{margin-top: 24px;}   
 .mt25{margin-top: 25px;}   
+.mt30{margin-top: 30px;}   
+.mt32{margin-top: 32px;}   
 .mt40{margin-top:40px;}   
+.mt45{margin-top:45px;}   
 .mr20{margin-right: 20px;} 
+.mr25{margin-right: 25px;} 
 .ml11{margin-left: 11px;}
 .f14{font-size:14px;}
 #noborder{border:none;}
@@ -1240,74 +1247,140 @@ height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font
   font-size: 16px;
   font-weight: normal;
 }
-.yyzx_con{
-	overflow:hidden;
-	*zoom:1;
-	}
+
 .cpgq_con{
 	overflow:hidden;
 	*zoom:1;
 	margin:0!important;
 	border:none!important;
 	}
-.yyzx_con .yy_qh{
-	width:82px;
+   .yy_qh{
+	width:120px;
 	float:left;
 	}
-.yyzx_con .yy_qh ul li{
+ .yy_qh ul li{
 	width:118px;
 	height:35px;
 	border:1px solid #dadada;
 	background:url(../images/tabtitle_bg.png) 0 0 repeat-x; 
 	border-top:none;
 	text-align:center;
-	font:14px/39px "宋体";
+	font:12px/35px "宋体";
 	color:#000;
 	cursor:pointer;
 }
-.yyzx_con .yy_qh ul li a{
+ .yy_qh ul li a{
 	color: #000;
 }
-.yyzx_con .yy_qh ul li a:hover,.yyzx_con .yy_qh ul li.selected a{
+ .yy_qh ul li a:hover, .yy_qh ul li.selected a{
 	font-weight: bold;
 	color:#fff;
 }
-.yyzx_con .yy_qh ul li.selected{
+ .yy_qh ul li.selected{
 	color:#019bb5;
-	font:bold 14px/39px "宋体";
-	border-right:none;
+	border-right-color:#ff7200;
 	background-color: #ff7200;
 	background-image: none;
 	}
-.yyzx_con .yyzx_right{
-	float:right;
-	width:558px;
-	height:400px;
+
+/*******/
+
+ .jishu .js_con{
 	overflow:hidden;
 	*zoom:1;
 	}
-.yyzx_con .yyzx_right .yy_r_l{
-	width:285px;
-	float:left;
-	overflow:hidden;
-	}
-.yyzx_con .yyzx_right .yy_r_r{
-	width:260px;
+ .jishu .js_con .js_right{
 	float:right;
-	overflow:hidden;
+	width:540px;
+	padding-top:13px;
+	}
+ .jishu .js_con .js_right .js_r_left{
+	width:270px;
+	float:left;
 	}
 
-.gcal{
-	margin-top:10px;
+ .jishu .js_r_left .public-con h3 a{
+ 	color:#000;
+ }
+  .jishu .js_r_left .public-con h3 a:hover{
+ 	color:#f15c00;
+ }
+ .jishu .js_con .js_right .js_r_left h2{
+	font-size:14px;
+	margin:10px 0;
+	
 	}
-.al_tl{
-	height:25px;
-	padding-left:11px;
-	font:bold 14px/25px "宋体";
-	color:#019bb5;
-	background:url(../images/bg01.gif) no-repeat;
+ .jishu .js_con .js_right .js_r_left p{
+	line-height:20px;
+	color:#656565;
 	}
-.more_link{
-	text-align:right;
+ 
+
+ .jishu .js_con .js_right .js_r_right{
+	width:255px;
 	float:right;
+	overflow:hidden;
+	}
+ .jishu .js_con .js_right .js_r_right h2{
+	font-size:14px;
+	margin:5px 0;
+	}
+ .jishu .js_con .js_right .js_r_right p{
+	text-indent:2em;
+	line-height:20px;
+	color:#656565;
+	border-bottom:1px dashed #ccc;
+	padding-bottom:5px;
+	}
+.pic_list{margin-right:-15px;}
+.pic_list li{margin-right:15px;}
+.pic_list li img{width:120px; height:90px;}
+
+.public-con h3{
+	font-family:Microsoft Yahei;
+	font-size:18px;
+	font-weight:normal;
+	width:100%;
+	overflow:hidden;
+	height:22px;
+	line-height:22px;
 }
+.public-con .pic-show img{width:120px; height:86px;float:left;}
+.public-con .pic-show p{padding-left:130px;}
+.public-con .pic-show{ height:auto;}
+ul.jianju-4{padding:8px 0 12px;}
+
+.pub-block-box{text-align:right;line-height: 24px;overflow: hidden;}
+.pub_block_title{width:86px; height:23px; line-height:23px; text-align:center;border:1px solid #ff7200;font-size:12px;color:#ff7200;font-weight: normal;float: left;}
+
+.simple-title{font:18px/18px microsoft Yahei;height:18px;overflow: hidden;}
+.simple-title a{color:#000;}
+.simple-title a:hover,.tuwen-news dd p a:hover{color:#f15c00;}
+
+.tuwen-news dt img{width:320px;height: 216px;}
+.tuwen-news dd h3{background: #c00;width:54px;height: 55px;float: left;text-align: center;line-height: 55px;}
+.tuwen-news dd p{background: #f2f2f2;font:18px/20px microsoft Yahei;padding: 8px 13px 7px 7px;margin-left: 54px;}
+.tuwen-news dd p a{color:#000;display:block;height: 40px;overflow: hidden;}
+
+
+.content-tabs li{float: left;width:68px;height: 21px;line-height: 21px; border:1px solid #ff7200;font-size: 14px;color: #000;text-align:center;cursor: pointer;position: relative;}
+.content-tabs li.selected i{
+	width:0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 5px;
+	border-color:#ff7200 transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+	position: absolute;
+	bottom:-11px;
+	left:32px;
+}
+.content-tabs li.selected{background: #ff7200;color:#fff;}
+
+.qh_tuwen img{width:105px; height:70px;}
+.qh_tuwen dd{width:200px;}
+.qh_tuwen dd h3{font-size:14px;font-weight: bold; line-height:20px;}
+.qh_tuwen dd p{ line-height:18px;color: #666;margin-top: 1px;}
+
+.conline{height: 1px;overflow:hidden;border-bottom:1px dashed #d8d8d8;}
