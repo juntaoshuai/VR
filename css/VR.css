@@ -1108,7 +1108,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 /*评测中心*/
 .pc-list{margin-right: -17px;border-bottom:1px dashed #d8d8d8;padding-bottom: 19px;*zoom:1;}
 .pc-list li{float: left;position: relative;width: 212px;height: 207px; margin-right: 17px;}
-.pc-list li .imgbox{overflow: hidden;}
+.pc-list li .imgbox{overflow: hidden;width: 212px;height: 146px;}
 .pc-list li img{
 	width:212px;
 	height: 146px;    
@@ -1468,10 +1468,11 @@ ul.ph_list li span.style2{
 	}
 
 .news-rank .tab_title{
-	*padding-bottom: 10px;
+	*padding-bottom: 5px;
 }
 .news-rank .tab_title h3{
 	padding-bottom:10px;
+
 }
 
 .tabs-news{
