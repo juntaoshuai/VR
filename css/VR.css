@@ -6,7 +6,8 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 body{color:#333;font-family:simsun,Arial; width:100%; margin:0 auto;font-size:12px; background:#fff;}
 table {border-collapse:collapse;border-spacing:0;}
 img {border:0;}
-div:after, ul:after, li:after, dl:after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;}
+div:after, ul:after, li:after, dl:after,.clearfix:after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;}
+.clearfix{*zoom:1;}
 ul,ol{list-style-type:none;}
 select,input,img,select{vertical-align:middle;outline:none;}
 .clear{clear:both; font-size:0; height:0;visibility:hidden;overflow:hidden;*zoom:1;}
@@ -33,6 +34,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .black,.black a{color:#000;}
 .black a:link,.black a:visited{color:#000;}
 .black a:hover{color:#F15C00;}
+.plr11{padding: 0 11px;}
 .pt2{padding-top: 2px;}
 .pt5{padding-top:5px;}
 .pt8{padding-top:8px;}
@@ -47,6 +49,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .mt10{margin-top: 10px;}
 .mt12{margin-top: 12px;}
 .mt13{margin-top: 13px;}
+.mt14{margin-top: 14px;}
 .mt17{margin-top: 17px;}
 .mt20{margin-top: 20px;}
 .mt23{margin-top: 23px;}   
@@ -380,12 +383,14 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	border-bottom: 1px solid #c4c4c4;
 	_z-index:1;
 	font-size: 12px;
+	*height: 25px;
 }
 
 .tab_title h3
 {
 	float: left;
 	padding: 0 10px;
+	height: 19px;
 	font: 16px/19px "Microsoft Yahei","黑体";
 	color: #313131;
 	text-align: center;
@@ -406,7 +411,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	margin: 0 0 0 -1px;
 	padding-bottom: 5px;
 	margin-right: 15px;
-	position: relative;
+	/*position: relative;*/
 
 }
 .tab_title h3 i{
@@ -417,19 +422,19 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	top:-1px;
 	background: #ddd;
 }
-.tab_title .selected,.tab_title .selected a:link,.tab_title .selected a:visited,.tab_title .selected:hover
+.tab_title h3 a{color:#313131;}
+.tab_title .selected a:link,.tab_title .selected a:visited
 {
 	color: #000;
-	font-weight: bold;
 }
-.tab_title .selected
+.tab_title h3.selected
 {
 	background: #fff;
 	border-bottom: 2px solid #ff7200;
 	margin-top: -1px;
 }
 
-.tab_title_nobg .selected{
+.tab_title_nobg h3.selected{
 	background: none;
 }
 
@@ -467,6 +472,8 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	font: 16px/30px "Microsoft Yahei","黑体";
 	color: #f30;
 }
+
+.tab_title_box{float: left;}
 .pad38 h3
 {
 	padding: 0 38px;
@@ -674,6 +681,11 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 	_vertical-align:top;
 	_zoom:1;
 	font-size: 14px;
+}
+.news_list_lh24 li{
+
+	line-height:24px;
+	height:24px;
 }
 .news_list2 li strong
 {
@@ -968,6 +980,7 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 {
 	border-top: solid 2px #f30;
 }
+.bk_list{margin-top: 7px;}
 .bk_list li
 {
 	margin: 8px 6px 0 0;
@@ -1093,14 +1106,33 @@ hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*mar
 .v-act-list dd .do{position: absolute;right:0;bottom:0;color:#ff7200;}
 
 /*评测中心*/
-.pc-list{margin-right: -17px;border-bottom:1px dashed #d8d8d8;padding-bottom: 19px;}
-.pc-list li{float: left;position: relative;width: 212px;margin-right: 17px;}
+.pc-list{margin-right: -17px;border-bottom:1px dashed #d8d8d8;padding-bottom: 19px;*zoom:1;}
+.pc-list li{float: left;position: relative;width: 212px;height: 207px; margin-right: 17px;}
+.pc-list li .imgbox{overflow: hidden;}
+.pc-list li img{
+	width:212px;
+	height: 146px;    
+	-webkit-transition: transform .3s ease-out;
+    -moz-transition: transform .3s ease-out;
+    -ms-transition: transform .3s ease-out;
+    -o-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+ }
+.pc-list li img:hover{
+	 -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .pc-list .tag{background: #ff7200;position: absolute;width: 39px;
-height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font-weight: bold;text-align:center;padding:26px 7px 0 9px;}
+height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font-weight: bold;text-align:center;padding:12px 7px 0 9px;}
 .pc-list .con{margin-left: 63px;margin-top: 4px;}
-.pc-list .con h3{font-size: 14px;line-height: 24px; font-weight: bold; color: #000;}
-.pc-list .con p{font-size:12px;color:#666;line-height: 18px;height: 36px;overflow: hidden;}
-
+.pc-list .con h3{font-size: 14px;line-height: 24px; font-weight: bold; }
+.pc-list .con h3 a{color: #000;}
+.pc-list .con p{font-size:12px;line-height: 18px;height: 36px;overflow: hidden;}
+.pc-list .con p a{color:#666;}
+.pc-list .con a:hover{color:#F15C00;}
 .video_pic{
 	margin-left:11px;
 	overflow:hidden;
@@ -1199,6 +1231,7 @@ height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font
 .new-selection .title{
 	line-height: 22px;
 	padding-bottom: 8px;
+	overflow: hidden;
 }
 .new-selection .title h2{
 	width:67px;
@@ -1213,6 +1246,7 @@ height: 49px;left:0;bottom: 0; font-size: 12px;line-height:18px;color:#fff; font
 
 .img-list140{
 	border-bottom: 1px dashed #d8d8d8;
+	overflow: hidden;
 }
 .img-list140 li{
 	width:140px;
@@ -1360,8 +1394,17 @@ ul.jianju-4{padding:8px 0 12px;}
 
 .tuwen-news dt img{width:320px;height: 216px;}
 .tuwen-news dd h3{background: #c00;width:54px;height: 55px;float: left;text-align: center;line-height: 55px;}
+.tuwen-news dd h3 img{*margin-top:12px;}
 .tuwen-news dd p{background: #f2f2f2;font:18px/20px microsoft Yahei;padding: 8px 13px 7px 7px;margin-left: 54px;}
 .tuwen-news dd p a{color:#000;display:block;height: 40px;overflow: hidden;}
+
+
+.tuwen-news-hot{width: 278px;margin:15px auto 0;}
+.tuwen-news-hot dt img{width:278px;height: 90px;}
+.tuwen-news-hot dd{background: #f2f2f2;height: 35px;overflow: hidden;}
+.tuwen-news-hot dd h3{background: #c00;width:50px;height:100%;float: left;text-align: center;line-height: 55px;font:bold 16px/35px microsoft Yahei;color: #f2f2f2;}
+.tuwen-news-hot dd p{background: #f2f2f2;font:16px/35px microsoft Yahei;margin-left: 50px;padding: 0 10px;}
+.tuwen-news-hot dd p a{color:#000;}
 
 
 .content-tabs li{float: left;width:68px;height: 21px;line-height: 21px; border:1px solid #ff7200;font-size: 14px;color: #000;text-align:center;cursor: pointer;position: relative;}
@@ -1385,3 +1428,92 @@ ul.jianju-4{padding:8px 0 12px;}
 .qh_tuwen dd p{ line-height:18px;color: #666;margin-top: 1px;}
 
 .conline{height: 1px;overflow:hidden;border-bottom:1px dashed #d8d8d8;}
+
+
+.tuwen-opacity{position: relative;width:278px;margin:15px auto 0;}
+.tuwen-opacity img{width:278px;height: 130px;}
+.tuwen-opacity .opa{width:100%;height: 30px;background: #000; opacity: .5;filter:alpha(opacity=50);position: absolute;left:0;bottom:0; }
+.tuwen-opacity h4{position: absolute;z-index: 1;font:14px/30px microsoft Yahei;color:#fff;height: 30px;left:0;bottom:0;width:100%;text-align:center;}
+
+.news_list_wk li{background-image:url(../images/tb02.gif);}
+
+ul.ph_list{
+	padding:4px 11px 0;
+	}
+ul.ph_list li{
+	height:30px;
+	font-size:14px;
+	line-height:30px;
+	position:relative;
+	overflow:hidden;
+	}
+ul.ph_list li span.style1 ,ul.ph_list li span.style2{
+	display:block;
+	float:left;
+	width:14px;
+	height:14px;
+	text-align:center;
+	font:12px/14px Arial, Helvetica, sans-serif;
+	margin-right:10px;
+	margin-top:8px;
+	padding:0;
+	}
+ul.ph_list li span.style1{
+	background:#4b4b4b;
+	color:#fff;
+	}
+ul.ph_list li span.style2{
+	background:#c80000;
+	color:#fff;
+	}
+
+.news-rank .tab_title{
+	*padding-bottom: 10px;
+}
+.news-rank .tab_title h3{
+	padding-bottom:10px;
+}
+
+.tabs-news{
+	margin: 2px 11px 0 0;
+}
+.tabs-news li{
+	width:30px;
+	height: 24px;
+	float: left;
+	background: #e4e4e4;
+	color: #000;
+	text-align: center;
+	line-height: 24px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.tabs-news li.selected{
+	background: #cc1517;
+	font-weight: bold;
+	color: #fff;
+}
+
+.blog_list li{
+	line-height:32px;
+	height:32px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-size: 12px;
+}
+.blog_list li i{
+   font-size: 20px;
+   font-weight: bold;
+   color:#a4a4a4;
+   margin-right: 11px;
+}
+.blog_list li i.hot{
+   color:#ff0300;
+}
+.blog_list li a{
+	color: #333;
+}
+.blog_list li a:hover{
+	color:#f15c00;
+}

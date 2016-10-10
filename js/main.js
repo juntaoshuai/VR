@@ -115,6 +115,9 @@ jQuery(function($){
     });
   };
 
+  $.tabs("#tabs1","#tabs-conbox1");
+  $.tabs("#tabs2","#tabs-conbox2");
+  $.tabs("#tabs3","#tabs-conbox3");
   $.tabs("#tabs4","#tabs-conbox4");
   $.tabs("#tabs5","#tabs-conbox5");
   $.tabs("#tabs6","#tabs-conbox6");
@@ -126,6 +129,8 @@ jQuery(function($){
   $.tabs("#tabs12","#tabs-conbox12","click");
   $.tabs("#tabs13","#tabs-conbox13","click");
   $.tabs("#tabs14","#tabs-conbox14","click");
+  $.tabs("#tabs15","#tabs-conbox15");
+  $.tabs("#tabs16","#tabs-conbox16");
 
   //tab里更多链接
   $(".tab_title_box h3").mouseover(function(){
